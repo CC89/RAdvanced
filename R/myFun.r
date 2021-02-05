@@ -1,0 +1,31 @@
+#' myFun
+#'
+# Description
+#' This function sums up two numbers.
+#'
+#' @details
+#' \code{data} contains the transaction data. The data set must contain a
+#'             column labeled "Customer" that allows unique customer identification
+#'             and a column labeled "TransDate", indicating the purchase date.
+#'             The column "PurchAmount" specifies the total spending per purchase.
+#'
+# Arguments
+#' @param arg1 A number
+#' @param arg2 A number with default value
+#'
+# Returned values
+#' @return The sum of \code{arg1} and \code{arg2}
+#'
+# Examples
+#' @examples
+#' myFun(1, 1)
+#' myFun(10, 1)
+#'
+#' @export
+
+myFun<- function(arg1, arg2=1){
+
+  res <- arg1+arg2
+  return(res)
+
+}
