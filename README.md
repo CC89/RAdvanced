@@ -30,17 +30,6 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(TestPackage)
-#> Loading required package: data.table
-#> Loading required package: Hmisc
-#> Loading required package: lattice
-#> Loading required package: survival
-#> Loading required package: Formula
-#> Loading required package: ggplot2
-#> 
-#> Attaching package: 'Hmisc'
-#> The following objects are masked from 'package:base':
-#> 
-#>     format.pval, units
 ## basic example code
 myFun(5)
 #> [1] 6
@@ -61,21 +50,29 @@ You can include R chunks like so:
 
 ``` r
 summary(transactions)
-#>     Customer           TransDate         Quantity       PurchAmount     
-#>  Min.   :100001   12.04.2007:   614   Min.   : 1.000   Min.   :   0.00  
-#>  1st Qu.:123563   12.10.2007:   606   1st Qu.: 1.000   1st Qu.:  34.95  
-#>  Median :148635   12.07.2010:   604   Median : 1.000   Median :  59.95  
-#>  Mean   :148367   12.08.2009:   599   Mean   : 1.037   Mean   :  84.17  
-#>  3rd Qu.:172467   12.12.2011:   596   3rd Qu.: 1.000   3rd Qu.:  99.95  
-#>  Max.   :199999   12.08.2008:   594   Max.   :70.000   Max.   :5000.00  
-#>                   (Other)   :219578                                     
-#>       Cost            TransID             TransKey     
-#>  Min.   :   0.00   Min.   :123456799   Min.   :100000  
-#>  1st Qu.:  14.03   1st Qu.:125972150   1st Qu.:155798  
-#>  Median :  24.00   Median :128272799   Median :211595  
-#>  Mean   :  39.01   Mean   :127995476   Mean   :211595  
-#>  3rd Qu.:  45.00   3rd Qu.:129188739   3rd Qu.:267392  
-#>  Max.   :3100.00   Max.   :132481165   Max.   :323190  
+#>     Customer           TransDate         Quantity     
+#>  Min.   :100001   12.04.2007:   614   Min.   : 1.000  
+#>  1st Qu.:123563   12.10.2007:   606   1st Qu.: 1.000  
+#>  Median :148635   12.07.2010:   604   Median : 1.000  
+#>  Mean   :148367   12.08.2009:   599   Mean   : 1.037  
+#>  3rd Qu.:172467   12.12.2011:   596   3rd Qu.: 1.000  
+#>  Max.   :199999   12.08.2008:   594   Max.   :70.000  
+#>                   (Other)   :219578                   
+#>   PurchAmount           Cost            TransID         
+#>  Min.   :   0.00   Min.   :   0.00   Min.   :123456799  
+#>  1st Qu.:  34.95   1st Qu.:  14.03   1st Qu.:125972150  
+#>  Median :  59.95   Median :  24.00   Median :128272799  
+#>  Mean   :  84.17   Mean   :  39.01   Mean   :127995476  
+#>  3rd Qu.:  99.95   3rd Qu.:  45.00   3rd Qu.:129188739  
+#>  Max.   :5000.00   Max.   :3100.00   Max.   :132481165  
+#>                                                         
+#>     TransKey     
+#>  Min.   :100000  
+#>  1st Qu.:155798  
+#>  Median :211595  
+#>  Mean   :211595  
+#>  3rd Qu.:267392  
+#>  Max.   :323190  
 #> 
 ```
 
